@@ -1,0 +1,108 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+}
+
+/* Form Container Styling */
+.form-container {
+    background: linear-gradient(145deg, #ffffff, #f0f4f8);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    width: 400px; /* Increased width */
+    text-align: center;
+    color: #333;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 32px; /* Larger header */
+    margin-bottom: 25px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Label Styling */
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+    font-size: 16px; /* Slightly larger labels */
+    color: #555;
+}
+
+/* Input Fields Styling */
+input {
+    width: 100%; /* Fit exactly within the container */
+    padding: 15px; /* Larger padding for better readability */
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #f7f7f7;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px; /* Larger text inside inputs */
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    background: #e8f0fe;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.15);
+    outline: none;
+}
+
+/* Submit Button Styling */
+button {
+    width: 100%; /* Button matches input width */
+    padding: 15px; /* Larger button */
+    background: linear-gradient(135deg, rgb(63, 50, 40), #ee8413);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px; /* Larger button text */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Response Message Styling */
+#response {
+    margin-top: 20px; /* More space after the form */
+    font-size: 18px; /* Larger text for responses */
+    font-weight: bold;
+    color: #333;
+}
+
+/* Additional Responsive Design */
+@media (max-width: 500px) {
+    .form-container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 28px; /* Adjust header size for smaller screens */
+    }
+
+    input,
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
